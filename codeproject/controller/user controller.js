@@ -1,5 +1,5 @@
 // User controller - logic ellam inga irukkum
-const User = require('../model/User');
+const User = require('../models/User');
 
 // Get all users
 const getUsers = async (req, res) => {
