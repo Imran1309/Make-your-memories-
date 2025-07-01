@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
-const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./codeproduct/routes/userRoutes');
 app.use('/api/users', userRoutes);
 
 
