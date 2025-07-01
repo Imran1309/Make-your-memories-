@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../codeproject/model/user');
+const User = require('../models/user');
 
 // 🔹 Create User (POST)
 router.post('/', async (req, res) => {
