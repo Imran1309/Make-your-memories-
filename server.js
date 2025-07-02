@@ -15,9 +15,7 @@ app.use(bodyParser.json());
 
 
 mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  bufferCommands: false,  // Prevent buffering timeout
+   
 })
   .then(() => console.log('✅ MongoDB connected'))
   .catch((err) => console.error('❌ MongoDB connection error:', err.message));
@@ -32,5 +30,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log('Server is running on port ${PORT}');
+    console.log(`Server is running on port ${PORT}`);
 });
