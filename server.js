@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const userRoutes = require('./routes/user'); // adjust path
+app.use('/api/users', userRoutes);
+
 
 dotenv.config();
 
